@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { useEffect, useState } from 'react'
+import './index.css'
 import './App.css'
+import WeatherDisplay from './components/weatherDisplay/WeatherDisplay'
+import Form from './components/Form'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [weatherData, setWeatherData] = useState(null);
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  const fetchData = async (searchTerm) => {
+    const apiKey = '2c8fcaff5cmshb30514913395c4fp10f062jsn47dbd8c865d9';
+    const url = `https://weatherapi-com.p.rapidapi.com/current.json?q=${searchTerm}`;
+    const options = {
+      method: 'GET',
+      headers: {
+        'x-rapidapi-key': '2c8fcaff5cmshb30514913395c4fp10f062jsn47dbd8c865d9',
+        'x-rapidapi-host': 'weatherapi-com.p.rapidapi.com',
+      },
+    };
+
+    try {
+      const response = await fetch(url, options);
+      const result = await response.json();
+      setWeatherData(result);
+      console.log(result);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+ 
 }
-
-export default App
