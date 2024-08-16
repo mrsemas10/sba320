@@ -33,15 +33,13 @@ export default function Form(props) {
                         borderRadius: '10px',
                         border: 'white',
                         padding: '5px',
-                        outline: 'none',
+                        outline: 'solid',
                         width: '150px',
                         marginRight: '20px',
                         marginLeft: '-15px',
                     }}
                 />
-                <button style={{ background: 'transparent', border: 'none', outline: 'none', cursor: 'pointer'}}>
-                    <img src="src\assets\search.png" alt='Weather' width="25px" ></img>
-                </button>
+                <input type="submit" value='Enter' style={{ borderRadius: '8px', cursor: 'pointer', padding: '2px'}}/>
             </form>
         </div>
     )

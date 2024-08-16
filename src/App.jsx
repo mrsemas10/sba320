@@ -28,5 +28,24 @@ export default function App() {
     }
   };
 
- 
+  useEffect(() => {
+    fetchData('Columbus');
+  }, []);
+
+
+  return (
+
+    <div className='app'>
+      <Form onWeatherSearch={fetchData} /><br></br>
+      {weatherData && (
+        <WeatherDisplay
+          location={weatherData.location}
+          currentTemp={weatherData.current}
+          condition={weatherData.current}
+          image={weatherData.current}
+        />
+      )}
+
+    </div>
+  )
 }

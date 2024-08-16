@@ -1,3 +1,14 @@
+A README.md file in your GitHub repository with:
+
+Explanations of the technologies used.
+Explanations of the approach taken.
+A link to your live site.
+Usage instructions, if relevant.
+Unsolved problems.
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
