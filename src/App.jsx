@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import './index.css'
-import './App.css'
 import WeatherDisplay from './components/weatherDisplay/WeatherDisplay'
 import Form from './components/Form'
 
 export default function App() {
   const [weatherData, setWeatherData] = useState(null);
+  // https://rapidapi.com/weatherapi/api/weatherapi-com/playground/apiendpoint_bef542ef-a177-4633-aacc-ee9703945037
 
   const fetchData = async (searchTerm) => {
     const apiKey = '2c8fcaff5cmshb30514913395c4fp10f062jsn47dbd8c865d9';

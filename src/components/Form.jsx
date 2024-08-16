@@ -36,7 +36,7 @@ export default function Form(props) {
                         outline: 'solid',
                         width: '150px',
                         marginRight: '20px',
-                        marginLeft: '-15px',
+                        marginLeft: '-25px',
                     }}
                 />
                 <input type="submit" value='Enter' style={{ borderRadius: '8px', cursor: 'pointer', padding: '2px'}}/>

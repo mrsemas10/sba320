@@ -1,7 +1,9 @@
 p {
     font-size: 1.2em;
-  }
-  
-  h1 {
+    text-align: left;
+}
+
+h1 {
     font-size: 3em;
-  }
+    text-align: left;
+}

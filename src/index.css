@@ -20,19 +20,21 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  background-color: rgb(192, 197, 58);
+  background-color: rgba(230, 237, 17, 0.995);
   color: black;
 }
 
 p {
+  /* city */
   margin-left: 22px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 h1 {
+  /* degrees */
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 img {
-  margin-left: 5px;
+  margin-left: -20px;
 }

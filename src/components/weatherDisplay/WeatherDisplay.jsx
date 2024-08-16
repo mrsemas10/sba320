@@ -5,13 +5,9 @@ export default function WeatherDisplay({ location, currentTemp, image }) {
   const loaded = () => {
     return (
       <>
-        <img src={image.condition.icon} alt="weather icon" width="40%"/>
+        <img src={image.condition.icon} alt="weather icon" width="50%"/>
         <h1>{currentTemp.temp_f} °F</h1><br></br>
-        <p 
-        style={{
-          
-        }}
-        >{location.name}</p>  
+        <p>{location.name}</p>  
       </>
     )
   }
