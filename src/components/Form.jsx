@@ -39,7 +39,7 @@ export default function Form(props) {
                         marginLeft: '-25px',
                     }}
                 />
-                <input type="submit" value='Enter' style={{ borderRadius: '8px', cursor: 'pointer', padding: '2px'}}/>
+                <input type="submit" value='Find My Location' style={{ borderRadius: '8px', cursor: 'pointer', padding: '2px'}}/>
             </form>
         </div>
     )

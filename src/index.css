@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   margin: 0px;
-  padding: 0px;
 }
 
 #root {
@@ -10,7 +9,7 @@
   padding-left: 170px;
   padding-right: 1px;
   background-color: rgb(92, 194, 194);
-  border-radius: 10px;
+  border-radius: 15px;
   border: solid black;
 }
 
@@ -19,8 +18,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  margin: 0;
-  background-color: rgba(230, 237, 17, 0.995);
+  background-color: rgb(207, 10, 105);
   color: black;
 }
 

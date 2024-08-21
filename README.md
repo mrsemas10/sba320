@@ -1,13 +1,24 @@
 A README.md file in your GitHub repository with:
 
 Explanations of the technologies used.
+    HTML
+    CSS
+    JavaScript
+    React
+    Netlify
+    weatherapi-com via rapidapi.com
+
 Explanations of the approach taken.
+    I wanted to do something that was "easy" that did not require a lot of files/folders to be functional. I went in order on the suggested list and the weather link seemed to be the most straight forward. (and some links did not offer free api keys anymore)
+
 A link to your live site.
+   https://radiant-daifuku-c1e938.netlify.app
+
 Usage instructions, if relevant.
+    Type at least 3 letters to populate almost any city, state or country worldwide. Will also work with airport codes.
+
 Unsolved problems.
-
-
-
+    None
 
 # React + Vite
 

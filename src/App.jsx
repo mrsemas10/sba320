@@ -5,6 +5,7 @@ import Form from './components/Form'
 
 export default function App() {
   const [weatherData, setWeatherData] = useState(null);
+  //where i got the fetch data:
   // https://rapidapi.com/weatherapi/api/weatherapi-com/playground/apiendpoint_bef542ef-a177-4633-aacc-ee9703945037
 
   const fetchData = async (searchTerm) => {
@@ -36,16 +37,16 @@ export default function App() {
   return (
 
     <div className='app'>
-      <Form onWeatherSearch={fetchData} /><br></br>
+      <Form onWeatherSearch={fetchData} />
+      <br/><br/>
       {weatherData && (
         <WeatherDisplay
           location={weatherData.location}
           currentTemp={weatherData.current}
-          condition={weatherData.current}
           image={weatherData.current}
         />
       )}
 
     </div>
   )
-}
+};
